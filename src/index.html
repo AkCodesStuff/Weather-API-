@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <form id="WeatherForm" class="flex flex-row items-center justify-center  pt-12 gap-2">
+        <Input id="cityName" placeholder="Enter City"
+            class="font-semibold text-2xl text-gray-500 px-6 py-2 border rounded-lg border-gray-400 hover:gray-600"></Input>
+        <button id="search" type="submit" class="bg-green-400  px-6 py-2 text-white rounded-lg border-none hover:bg-green-300 hover:border hover:border-black">Get Weather</button>
+    </form>
+    <div id="weatherCard" class=" flex-col gap-10 py-10 mt-12 mx-60 inline-flex items-center justify-center border border-none bg-gradient-to-b from-blue-400 to bg-yellow-400 text-xl rounded-lg text-white">
+        
+        <span id="icon" class="text-[64px]"></span>
+        <span id="temp" class="font-bold text-black text-5xl">Enter a city name</span>
+        <span id="Humidity" ></span>
+        <span id="condition"></span>
+        <span id="city" class="font-semibol text-2xl text-gray-600"></span>
+        
+    </div>
+    <div id="error" class="text-rose-500 font-semibold text-center justify-center mt-10 text-3xl"></div>
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
